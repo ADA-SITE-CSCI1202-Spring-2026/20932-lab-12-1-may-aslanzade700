@@ -5,7 +5,7 @@ public class ThreadBug {
     Thread t = new Thread(() -> {
     System.out.println("Running in another thread");
     });
-    t.run();
+    t.start();
     System.out.println("Main finished");
     }
     }
