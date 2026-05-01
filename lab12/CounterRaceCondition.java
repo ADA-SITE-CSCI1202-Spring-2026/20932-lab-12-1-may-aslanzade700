@@ -1,5 +1,6 @@
 package lab12;
 public class CounterRaceCondition {
+    static synchronized void increment(){counter++;}    
     static int counter = 0;
     public static void main(String[] args) throws InterruptedException {
     Thread t1 = new Thread(() -> {
